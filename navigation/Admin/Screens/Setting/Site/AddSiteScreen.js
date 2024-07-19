@@ -57,17 +57,6 @@ const AddSiteScreen = (props) => {
     }, []);
 
 
-    // const getLocation = async () => {
-    //     try {
-    //         console.log('location');
-    //         const response = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent('ausz tech 444 g4 lahore')}&AIzaSyBQjmf6oH07MsdiL_BMsp5PeyvuX8vu5G8`);
-    //         const data = await response.json();
-    //         console.log(data, 'res');
-    //     } catch (error) {
-    //         console.log(error,'erroe of google api');
-    //     }
-    // };
-
     const requestLocationPermission = async () => {
         if (Platform.OS === 'ios') {
             getOneTimeLocation();
